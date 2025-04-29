@@ -1,60 +1,103 @@
+
 # 🛍️ Mall Customer Segmentation & Spending Score Analysis
 
-This project performs a spending behavior analysis on the "Mall Customers" dataset using **Apache PySpark** in a professional WSL-based environment.The focus is on understanding **spending score patterns** across different age groups, income levels, and genders, and clustering customers for targeted strategies.# Mall Customers Spending Analysis. It is developed for internship and portfolio demonstration purposes.
+This project performs a spending behavior analysis on the **Mall Customers dataset** using **Apache PySpark** within a professional **WSL-based environment**. It focuses on understanding customer segmentation by analyzing **spending scores** across different **age groups, income levels, and gender**, and applies clustering techniques for better insights.
+
+This project was developed as part of an internship assignment.
 
 ---
 
 ## 🚀 Technologies Used
-- **PySpark**: For distributed data processing
-- **VS Code**: Local development
-- **Pandas & Matplotlib** (optional): For local plotting
-- **scikit-learn**: KMeans clustering
-- **Word**: Final report documentation
+
+- **PySpark 3.5.5** – For scalable DataFrame processing
+- **Python 3.11.8 (via pyenv)** – Managed inside WSL
+- **WSL 2 (Ubuntu 24.04)** – Linux environment on Windows
+- **VSCode + Remote - WSL** – Development setup
+- **Jupyter Notebook** – Interactive analysis
+- **Pandas & Seaborn** – Optional for visualization
+- **Scikit-learn** – For KMeans clustering (optional)
+
+---
 
 ## 📂 Project Structure
 
+```
 Mall_Customers_Analysis/
 │
 ├── data/
-│   └── Mall_Customers.csv              # Raw dataset
+│   └── Mall_Customers.csv             # Raw dataset
 │
 ├── notebooks/
-│   └── analysis.ipynb             # Jupyter Notebook with full analysis
+│   └── analysis.ipynb                 # Full Jupyter analysis notebook
 │
 ├── src/
-│   ├
-│   ├── load_data.py                    # Script to load data using PySpark
-│   ├── spending_score_analysis.py            # Script for spending score analysis
-│   └── PySpark modules                 
+│   ├── load_data.py                   # Load dataset using Spark
+│   ├── spending_score_analysis.py     # Grouping and visual analysis
 │
 ├── reports/
-│   ├── Analysis_Report.docx            # Word report (final)
-│   └── Challenges_Faced.docx           # Problems you encountered
+│   ├── Analysis_Report.docx           # Word report with insights
+│   └── Challenges_Faced.docx          # Challenges & resolutions
 │
 ├── outputs/
-│   ├── charts/                         # All generated charts/images
-│   └── cleaned_data.csv                # Any exported or cleaned data
+│   ├── charts/                        # Exported visualizations
+│   └── cleaned_data.csv               # Optional cleaned output
 │
-├                  
-├── README.md                           # Project overview, steps, insights
-└── .gitignore                          # Optional, if pushing to GitHub
+├── requirements.txt                   # All required Python packages
+└── README.md                          # Project overview (this file)
+```
 
+---
 
 ## 🧠 Analysis Focus
-- Spending Score vs. Age
-- Spending Score vs. Income
-- Gender-based patterns
-- Customer clustering using K-Means
+
+- 🔍 Spending Score vs. Age
+- 💸 Spending Score vs. Annual Income
+- 👩‍🦰 Gender-based behavior
+- 🔄 Customer Clustering (KMeans - optional)
+
+---
 
 ## 📈 Deliverables
-- Cleaned dataset 
-- Visualizations
-- Word report on insights & challenges
-- Jupyter notebook (.ipynb)
+
+- ✅ Spark-based analysis in Jupyter Notebook
+- ✅ Word report with summary and challenges
+- ✅ Cleaned data and visualizations (optional)
+- ✅ Documented environment and setup steps
+
+---
+
+## ▶️ How to Run
+
+1. Activate virtual environment:
+   `source venv/bin/activate`
+
+2. Run analysis script:
+   `python3 src/spending_score_analysis.py`
+
+3. Or launch notebook:
+   `jupyter notebook notebooks/analysis.ipynb`
+
+---
+
+## ⚙️ Environment Summary
+
+- OS: Ubuntu 24.04 via WSL2
+- Python: 3.11.8 (via pyenv)
+- Spark: 3.5.5 (local mode)
+- Editor: VSCode with Remote - WSL
+- Notebook: Jupyter in WSL, using correct venv kernel
+
+---
+
+## 🗃️ Dataset Source
+
+[📦 Mall Customers Dataset (Google Drive)](https://drive.google.com/file/d/1k6A8r1cCdt0Ft0mPtvnYckruaTn2XXz0/view?usp=share_link)
+
+---
 
 ## 📝 Author
-**Team4**  
-Intern - Mall Customer Segmentation Project
 
-## 🗃️ Data Source
-[Dataset Link](https://drive.google.com/file/d/1k6A8r1cCdt0Ft0mPtvnYckruaTn2XXz0/view?usp=share_link)
+**Team4**  
+Intern – Mall Customer Segmentation Project  
+
+---
