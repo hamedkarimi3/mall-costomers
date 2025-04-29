@@ -5,9 +5,9 @@
 
 This report presents an analysis of the *Mall Customers* dataset with a focus on the **Spending Score (1-100)**. The goal is to identify behavioral insights and purchasing patterns using Apache PySpark in a distributed data environment.
 
-The dataset includes the following attributes:
+The dahe following attributes:
 - **CustomerID** (Integer)
-- **Genre** (Male/Female)
+- **Genre** (Male/Femtaset includes tale)
 - **Age** (Years)
 - **Annual Income (k$)** (Integer)
 - **Spending Score (1-100)** (Integer)
